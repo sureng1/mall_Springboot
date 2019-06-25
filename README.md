@@ -10,5 +10,5 @@ mvn clean package dockerfile:build -DskipTests -e
 ```
 ### Run
 ```bash
-docker run -p 8081:8081 --name mall -v /data/mall/config:/data/mall/config -v /data/mall/log:/data/mall/log -v /data/mall/file:/data/mall/file -v /data/mall/h2db:/data/mall/h2db --restart=always -d skywa1ker/mall:1.0
+docker run -p 8080:8080 --name mall -v /data/mall/config:/data/mall/config -v /data/mall/log:/data/mall/log -v /data/mall/file:/data/mall/file -v /data/mall/h2db:/data/mall/h2db --restart=always -d skywa1ker/mall:1.0
 ```
